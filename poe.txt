@@ -1,9 +1,0 @@
-<html>
-<head>
-<title>web application/title>
-<body>
-<h1> <web application/h1>
-<h3> <This is a web application to push jenkins to github/h2>
-</body>
-</head>
-</html>
