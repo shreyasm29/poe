@@ -1,0 +1,10 @@
+pipeline
+{
+  environment
+  {
+    registry = "shreyasm29/demoimage"
+    registryCredential = 'dockerid'
+    dockerImage = ''
+  }
+agent any
+}
