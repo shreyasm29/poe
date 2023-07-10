@@ -1,10 +1,23 @@
 pipeline
 {
-  environment
+  agent any
+ 
+  stages
   {
-    registry = "shreyasm29/demoimage"
-    registryCredential = 'dockerid'
-    dockerImage = ''
-  }
-agent any
-}
+    stage ('Build')
+    {
+       steps
+       {
+         bat 'javac HelloWorld.java'
+         bat 'java -version'
+         }
+        }
+        stage('Run')
+        {
+           steps
+              {
+                 bat 'java HelloWorld'
+              }
+             }
+            }
+         }   
